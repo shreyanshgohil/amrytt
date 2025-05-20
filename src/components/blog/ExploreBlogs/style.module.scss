@@ -7,12 +7,15 @@
     color: #10152e;
   }
   &__list {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 4rem;
-  }
-
-  &__item {
+    @media (min-width: 540px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__image-wrapper {

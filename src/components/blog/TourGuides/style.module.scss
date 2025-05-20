@@ -7,9 +7,15 @@
     letter-spacing: 1px;
   }
   &__cards {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 2.5rem;
+    @media (min-width: 540px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__info {
