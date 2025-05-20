@@ -1,3 +1,14 @@
+import Gym from "../../public/images/blogs/gym.png";
+import Author from "../../public/images/blogs/author.png";
+import blogSecond from "../../public/images/blogs/blog-2.jpg";
+import blogThird from "../../public/images/blogs/blog-3.jpg";
+import blogForth from "../../public/images/blogs/blog-4.jpg";
+import blogFifth from "../../public/images/blogs/blog-5.png";
+import blogSixth from "../../public/images/blogs/blog-6.png";
+import userOne from "../../public/images/blogs/user-1.png";
+import userSecond from "../../public/images/blogs/user-2.png";
+import userThird from "../../public/images/blogs/user-3.png";
+
 const htmlString = `
   <p>Discover exercises that target every muscle group, helping you build strength and endurance. Perfect for beginners and seasoned gym-goers alike.</p>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus</p>
@@ -19,17 +30,13 @@ export const blogs = [
     id: 1,
     slug: "the-ultimate-guide-to-full-body-workouts",
     title: "The Ultimate Guide to Full-Body Workouts",
-    featuredImage: "/image/blog/gym.png",
+    featuredImage: Gym,
     blogCategory: "travel",
-    author: {
-      component: "author",
-    },
-    content: htmlString,
     components: {
       contentSide: [
         {
           componentName: "AuthorDetailsSort",
-          authorImage: "",
+          authorImage: Author,
           authorName: "Alex Carter",
           createdAt: "23 January 2025",
         },
@@ -40,7 +47,7 @@ export const blogs = [
         {
           componentName: "AuthorDetails",
           authorName: "Alex Carter",
-          authorImage: "",
+          authorImage: Author,
           authorBio:
             "With over a decade of experience in the fitness industry, Alex specializes in strength training and functional fitness. Certified by NASM and known for his motivational style, Alex designs workout programs that are both challenging and achievable. His passion lies in helping clients build strength and confidence through personalized training routines. Outside the gym, Alex is an avid runner and enjoys outdoor adventures.",
         },
@@ -58,8 +65,31 @@ export const blogs = [
       ],
       exploreSide: [
         {
-          componentName: "categoryBlogs",
-          blogs: [1, 2, 3],
+          componentName: "exploreBlogs",
+          blogs: [
+            {
+              title: "Two women in local stand are chatting during morning..",
+              category: "Culinary",
+              date: "13 Jun 2022",
+              url: "#",
+              articleImage: blogSixth,
+            },
+            {
+              title: "Enjoying the sunset on Padar island together",
+              category: "Travel",
+              date: "22 Jul 2022",
+              url: "#",
+              articleImage: blogSixth,
+            },
+            {
+              title:
+                "The lush green surroundings of the campgrounds create a..",
+              category: "Travel",
+              date: "22 Jul 2022",
+              url: "#",
+              articleImage: blogFifth,
+            },
+          ],
         },
         {
           componentName: "spacer",
@@ -72,19 +102,19 @@ export const blogs = [
               guideName: "Miranda Rachel",
               guideLocation: "Jombang, Jawa timur",
               starts: 4,
-              profileImage: "",
+              profileImage: userOne,
             },
             {
               guideName: "Danielle Marsh",
               guideLocation: "Wonosobo, Jawa ten..",
               starts: 4,
-              profileImage: "",
+              profileImage: userSecond,
             },
             {
               guideName: "Kang Haerin",
               guideLocation: "Bandung, Jawa barat",
               starts: 5,
-              profileImage: "",
+              profileImage: userThird,
             },
           ],
         },
@@ -94,7 +124,7 @@ export const blogs = [
       {
         title: "The Ultimate Guide to Full-Body Workouts",
         url: "#",
-        articleImage: "#",
+        articleImage: Gym,
         content:
           "Discover exercises that target every muscle group, helping you build strength and endurance. Perfect for beginners and seasoned gym-goers alike.",
         createdBy: "Alex Carter",
@@ -102,26 +132,26 @@ export const blogs = [
       {
         title: "5 Tips for Better Cardio Sessions",
         url: "#",
-        articleImage: "#",
+        articleImage: blogSecond,
         content:
-          "Discover exercises that target every muscle group, helping you build strength and endurance. Perfect for beginners and seasoned gym-goers alike.",
-        createdBy: "Alex Carter",
+          "Improve your cardio performance with these simple yet effective techniques to maximize stamina and get the most from each workout.",
+        createdBy: "Maya Lee",
       },
       {
         title: "Meal Prep Basics for Gym Enthusiasts",
         url: "#",
-        articleImage: "#",
+        articleImage: blogThird,
         content:
-          "Discover exercises that target every muscle group, helping you build strength and endurance. Perfect for beginners and seasoned gym-goers alike.",
-        createdBy: "Alex Carter",
+          "Fuel your workouts with balanced, easy-to-prepare meals. A guide on planning, prepping, and staying consistent with nutrition.",
+        createdBy: "Jordan Smith",
       },
       {
         title: "Building Core Strength: Exercises and Benefits",
         url: "#",
-        articleImage: "#",
+        articleImage: blogForth,
         content:
-          "Discover exercises that target every muscle group, helping you build strength and endurance. Perfect for beginners and seasoned gym-goers alike.",
-        createdBy: "Alex Carter",
+          "A strong core is essential for stability and injury prevention. Learn the best exercises to enhance your core power.",
+        createdBy: "Emma Rodriguez",
       },
     ],
   },

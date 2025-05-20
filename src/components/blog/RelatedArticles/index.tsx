@@ -2,6 +2,7 @@ import Image from "next/image";
 import React, { FC } from "react";
 import styles from "./styles.module.scss";
 import { RelatedArticleProps } from "./types";
+import Link from "next/link";
 
 const RelatedArticles: FC<RelatedArticleProps> = ({ relatedArticles }) => {
   return (
@@ -14,10 +15,14 @@ const RelatedArticles: FC<RelatedArticleProps> = ({ relatedArticles }) => {
         </h2>
         <div className={styles["related-articles__list"]}>
           {relatedArticles.map((singleRelatedArticle, index: number) => (
-            <div className={styles["related-articles__card"]} key={index}>
+            <Link
+              href={singleRelatedArticle.url}
+              className={styles["related-articles__card"]}
+              key={index}
+            >
               <div className={styles["related-articles__image"]}>
                 <Image
-                  src={"/images/blogs/gym.png"}
+                  src={singleRelatedArticle.articleImage}
                   width={288}
                   height={229}
                   alt={singleRelatedArticle.title}
@@ -32,7 +37,7 @@ const RelatedArticles: FC<RelatedArticleProps> = ({ relatedArticles }) => {
               <span className={styles["related-articles__author"]}>
                 By {singleRelatedArticle.createdBy}
               </span>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

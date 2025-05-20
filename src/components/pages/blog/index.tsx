@@ -14,7 +14,7 @@ const BlogPage: FC<BlogPageProps> = (props) => {
 
       <div className={styles["blog__image"]}>
         <Image
-          src={"/images/blogs/gym.png"}
+          src={blog.featuredImage}
           width={1440}
           height={480}
           alt={blog.title}

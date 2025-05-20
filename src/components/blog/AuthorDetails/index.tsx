@@ -12,7 +12,7 @@ const AuthorDetails: FC<AuthorDetailsProps> = ({ block }) => {
 
       <div className={styles["author-details__avatar"]}>
         <Image
-          src={"/images/blogs/author.png"}
+          src={block.authorImage}
           height={100}
           width={100}
           alt={block.authorName}

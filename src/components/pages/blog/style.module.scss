@@ -12,6 +12,7 @@
     padding: 0 1.5rem;
     height: 179px;
     @media (min-width: 468px) {
+      padding: 0;
       height: auto;
     }
     img {
@@ -20,8 +21,6 @@
       object-fit: cover;
       object-position: right;
     }
-  }
-  &__content-wrapper {
   }
   &__layout {
     display: flex;

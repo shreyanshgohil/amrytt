@@ -9,7 +9,7 @@ const AuthorDetailsSort: FC<AuthorDetailsSortProps> = ({ block }) => {
       <div className={styles["author-details__info"]}>
         <div className={styles["author-details__avatar"]}>
           <Image
-            src={"/images/blogs/author.png"}
+            src={block.authorImage}
             height={32}
             width={32}
             alt=""
