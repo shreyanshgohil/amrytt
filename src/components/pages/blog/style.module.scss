@@ -8,17 +8,30 @@
     }
   }
   &__image {
+    margin-bottom: 2.4rem;
+    padding: 0 1.5rem;
+    height: 179px;
+    @media (min-width: 468px) {
+      height: auto;
+    }
     img {
       width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: right;
     }
-    margin-bottom: 2.4rem;
   }
   &__content-wrapper {
   }
   &__layout {
     display: flex;
     align-items: flex-start;
+    flex-direction: column;
     gap: 4rem;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      padding: 0.8rem 1.5rem 6.4rem 1.5rem;
+    }
   }
   &__main-content {
     max-width: 839px;

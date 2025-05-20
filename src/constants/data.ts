@@ -46,8 +46,14 @@ export const blogs = [
         },
         {
           componentName: "NextPrevBlogs",
-          prevBlogId: 1,
-          nextBlogId: 2,
+          nextBlogData: {
+            title: "5 Tips for Better Cardio Sessions",
+            url: "#",
+          },
+          prevBlogData: {
+            title: "Meal Prep Basics for Gym Enthusiasts",
+            url: "#",
+          },
         },
       ],
       exploreSide: [
@@ -84,7 +90,40 @@ export const blogs = [
         },
       ],
     },
-    reletedBlogs: [1, 2, 3, 4],
+    relatedArticles: [
+      {
+        title: "The Ultimate Guide to Full-Body Workouts",
+        url: "#",
+        articleImage: "#",
+        content:
+          "Discover exercises that target every muscle group, helping you build strength and endurance. Perfect for beginners and seasoned gym-goers alike.",
+        createdBy: "Alex Carter",
+      },
+      {
+        title: "5 Tips for Better Cardio Sessions",
+        url: "#",
+        articleImage: "#",
+        content:
+          "Discover exercises that target every muscle group, helping you build strength and endurance. Perfect for beginners and seasoned gym-goers alike.",
+        createdBy: "Alex Carter",
+      },
+      {
+        title: "Meal Prep Basics for Gym Enthusiasts",
+        url: "#",
+        articleImage: "#",
+        content:
+          "Discover exercises that target every muscle group, helping you build strength and endurance. Perfect for beginners and seasoned gym-goers alike.",
+        createdBy: "Alex Carter",
+      },
+      {
+        title: "Building Core Strength: Exercises and Benefits",
+        url: "#",
+        articleImage: "#",
+        content:
+          "Discover exercises that target every muscle group, helping you build strength and endurance. Perfect for beginners and seasoned gym-goers alike.",
+        createdBy: "Alex Carter",
+      },
+    ],
   },
   {
     id: 2,

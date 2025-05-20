@@ -1,0 +1,34 @@
+.author-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
+  border-top: 1px solid #e5e6ea;
+  border-bottom: 1px solid #e5e6ea;
+  &__name {
+    font-size: 1.8rem;
+    text-align: center;
+    color: #10152e;
+    font-weight: 400;
+    margin-bottom: 1.2rem;
+    line-height: 2.6rem;
+    letter-spacing: 1px;
+  }
+  &__avatar {
+    height: 10rem;
+    width: 10rem;
+    margin-bottom: 1.2rem;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+  }
+  &__bio {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    letter-spacing: 1px;
+    color: #4e5265;
+  }
+}

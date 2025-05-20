@@ -12,17 +12,21 @@ const AuthorDetailsSort = dynamic(() => import("../AuthorDetailsSort"), {
 const AuthorDetails = dynamic(() => import("../AuthorDetails"), {
   loading: () => <p>Loading...</p>,
 });
+const NextPrevBlogs = dynamic(() => import("../NextPrevBlogs"), {
+  loading: () => <p>Loading...</p>,
+});
 
-const FlexibleLayout = ({ block, extras }: any) => {
+const FlexibleLayout = ({ block }: any) => {
   const { componentName } = block;
 
   const components: any = {
     BlogContent: BlogContent,
     AuthorDetailsSort,
     AuthorDetails,
+    NextPrevBlogs,
   };
   return componentName && components[componentName] ? (
-    React.createElement(components[componentName], { block, extras })
+    React.createElement(components[componentName], { block })
   ) : (
     <div>Missing component {componentName}</div>
   );

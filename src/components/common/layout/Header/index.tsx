@@ -2,8 +2,10 @@ import React, { FC } from "react";
 import styles from "./style.module.scss";
 import { HeaderProps } from "./types";
 import Link from "next/link";
+
 const Header: FC<HeaderProps> = (props) => {
   const { breadcrumb } = props;
+
   return (
     <header className={styles.header}>
       <nav className={styles["breadcrumb-header"]}>

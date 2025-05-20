@@ -1,10 +1,13 @@
-import React from "react";
+import React, { FC } from "react";
 import styles from "./style.module.scss";
 import Image from "next/image";
-import FlexibleLayout from "@/components/blog/FlexibleLayout";
+import CommentBox from "@/components/blog/CommentBox";
+import { RelatedArticles, FlexibleLayout } from "@/components/blog";
+import { BlogPageProps } from "./types";
 
-const BlogPage = (props) => {
+const BlogPage: FC<BlogPageProps> = (props) => {
   const { blog } = props;
+
   return (
     <main className={styles["blog"]}>
       <h1 className={`heading--h1 ${styles["blog__title"]}`}>{blog.title}</h1>
@@ -32,7 +35,9 @@ const BlogPage = (props) => {
             ))}
           </div>
         </div>
+        <CommentBox />
       </div>
+      <RelatedArticles relatedArticles={blog.relatedArticles} />
     </main>
   );
 };

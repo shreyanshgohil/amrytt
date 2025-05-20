@@ -1,5 +1,8 @@
 .container--boxed {
-  padding: 0 2.4rem;
+  padding: 0 1.5rem;
   max-width: 1248px;
   margin: 0 auto;
+  @media (min-width: 1024px) {
+    padding: 0 2.4rem;
+  }
 }

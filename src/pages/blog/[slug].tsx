@@ -1,13 +1,16 @@
 import { Layout } from "@/components/common";
 import { BlogPage } from "@/components/pages";
+import { BlogPageProps } from "@/components/pages/blog/types";
 import { blogs } from "@/constants/data";
+import { FC } from "react";
 
-const BlogIndex = (props) => {
+const BlogIndex: FC<BlogPageProps> = (props) => {
   const { blog } = props;
   const breadcrumb = [
     { title: "Home", url: "/" },
     { title: "Articles", url: "/blog" },
   ];
+
   return (
     <Layout breadcrumb={breadcrumb}>
       <BlogPage blog={blog} />
@@ -26,8 +29,7 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps({ params }: any) {
-  console.log(params, "aaaaa");
+export async function getStaticProps({ params }: { params: { slug: string } }) {
   const blog = blogs.find((b) => b.slug === params.slug);
 
   return {
