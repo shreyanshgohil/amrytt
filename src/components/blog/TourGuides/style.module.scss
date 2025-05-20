@@ -1,0 +1,58 @@
+.tour-guides {
+  margin-bottom: 6.4rem;
+  &__title {
+    font-size: 2rem;
+    line-height: 2.8rem;
+    margin-bottom: 4rem;
+    letter-spacing: 1px;
+  }
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    margin-bottom: 1.6rem;
+  }
+
+  &__avatar {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &__name {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    letter-spacing: 1px;
+    margin-bottom: 0.4rem;
+  }
+
+  &__location {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  &__rating {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  &__rating-count {
+    font-size: 1.5rem;
+    color: #121212;
+    letter-spacing: 0.5px;
+    margin-left: 1rem;
+  }
+}

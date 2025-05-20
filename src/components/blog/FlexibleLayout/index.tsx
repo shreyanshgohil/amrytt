@@ -16,14 +16,28 @@ const NextPrevBlogs = dynamic(() => import("../NextPrevBlogs"), {
   loading: () => <p>Loading...</p>,
 });
 
+const ExploreBlogs = dynamic(() => import("../ExploreBlogs"), {
+  loading: () => <p>Loading...</p>,
+});
+const Spacer = dynamic(() => import("../Spacer"), {
+  loading: () => <p>Loading...</p>,
+});
+
+const TourGuides = dynamic(() => import("../TourGuides"), {
+  loading: () => <p>Loading...</p>,
+});
+
 const FlexibleLayout = ({ block }: any) => {
   const { componentName } = block;
 
   const components: any = {
-    BlogContent: BlogContent,
+    BlogContent,
     AuthorDetailsSort,
     AuthorDetails,
     NextPrevBlogs,
+    ExploreBlogs,
+    Spacer,
+    TourGuides,
   };
   return componentName && components[componentName] ? (
     React.createElement(components[componentName], { block })

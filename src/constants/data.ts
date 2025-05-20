@@ -65,7 +65,7 @@ export const blogs = [
       ],
       exploreSide: [
         {
-          componentName: "exploreBlogs",
+          componentName: "ExploreBlogs",
           blogs: [
             {
               title: "Two women in local stand are chatting during morning..",
@@ -92,11 +92,11 @@ export const blogs = [
           ],
         },
         {
-          componentName: "spacer",
+          componentName: "Spacer",
           height: 100,
         },
         {
-          componentName: "tourGuides",
+          componentName: "TourGuides",
           guides: [
             {
               guideName: "Miranda Rachel",
