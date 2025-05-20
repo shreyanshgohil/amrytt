@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.4rem;
+  padding-top: 6.4rem;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+  .breadcrumb-header {
+    &__list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+    }
+    &__item {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    &__link {
+      text-transform: uppercase;
+      font-size: 1.4rem;
+      color: #262d4d;
+      &:hover {
+        text-decoration: underline;
+      }
+      &--active {
+        font-weight: 700;
+      }
+    }
+    &__divider {
+      font-size: 1.4rem;
+      color: #262d4d;
+    }
+  }
+}

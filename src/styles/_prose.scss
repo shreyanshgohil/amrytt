@@ -1,0 +1,23 @@
+.prose--styled {
+  p {
+    font-size: 1.6rem;
+    margin-bottom: 3.2rem;
+    margin-top: 3.2rem;
+    letter-spacing: 1px;
+    line-height: 2.4rem;
+  }
+
+  strong {
+    font-weight: 600;
+    font-size: 1.6rem;
+    padding-left: 2.4rem;
+    display: inline-block;
+    line-height: 2.4rem;
+  }
+  hr {
+    margin-bottom: 1.6rem;
+    margin-top: 1.6rem;
+    border: none;
+    border-top: 1px solid #e5e6ea;
+  }
+}
