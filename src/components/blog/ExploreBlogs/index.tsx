@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import { ExploreBlogsProps } from "./types";
 import Image from "next/image";
 import styles from "./style.module.scss";
+import Link from "next/link";
 
 const ExploreBlogs: FC<ExploreBlogsProps> = ({ block }) => {
   const { blogs } = block;
@@ -12,7 +13,11 @@ const ExploreBlogs: FC<ExploreBlogsProps> = ({ block }) => {
       <div className={styles["explore-blogs__list"]}>
         {blogs.map((singleBlog, index) => {
           return (
-            <div className={styles["explore-blogs__item"]} key={index}>
+            <Link
+              href={singleBlog.url}
+              className={styles["explore-blogs__item"]}
+              key={index}
+            >
               <div className={styles["explore-blogs__image-wrapper"]}>
                 <Image
                   src={singleBlog.articleImage}
@@ -34,7 +39,7 @@ const ExploreBlogs: FC<ExploreBlogsProps> = ({ block }) => {
               <p className={styles["explore-blogs__title"]}>
                 {singleBlog.title}
               </p>
-            </div>
+            </Link>
           );
         })}
       </div>

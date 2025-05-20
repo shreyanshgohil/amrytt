@@ -55,11 +55,11 @@ export const blogs = [
           componentName: "NextPrevBlogs",
           nextBlogData: {
             title: "5 Tips for Better Cardio Sessions",
-            url: "#",
+            url: "/blog/5-tips-for-better-cardio-sessions",
           },
           prevBlogData: {
             title: "Meal Prep Basics for Gym Enthusiasts",
-            url: "#",
+            url: "/blog/meal-prep-basics-for-gym-enthusiasts",
           },
         },
       ],
@@ -71,14 +71,14 @@ export const blogs = [
               title: "Two women in local stand are chatting during morning..",
               category: "Culinary",
               date: "13 Jun 2022",
-              url: "#",
+              url: "/blog/two-women-in-local-stand-are-chatting-during-morning",
               articleImage: blogSixth,
             },
             {
               title: "Enjoying the sunset on Padar island together",
               category: "Travel",
               date: "22 Jul 2022",
-              url: "#",
+              url: "/blog/enjoying-the-sunset-on-padar-island-together",
               articleImage: blogSixth,
             },
             {
@@ -86,7 +86,7 @@ export const blogs = [
                 "The lush green surroundings of the campgrounds create a..",
               category: "Travel",
               date: "22 Jul 2022",
-              url: "#",
+              url: "/blog/the-lush-green-surroundings-of-the-campgrounds-create-a",
               articleImage: blogFifth,
             },
           ],
@@ -123,7 +123,7 @@ export const blogs = [
     relatedArticles: [
       {
         title: "The Ultimate Guide to Full-Body Workouts",
-        url: "#",
+        url: "/blog/the-ultimate-guide-to-full-body-workouts",
         articleImage: Gym,
         content:
           "Discover exercises that target every muscle group, helping you build strength and endurance. Perfect for beginners and seasoned gym-goers alike.",
@@ -131,7 +131,7 @@ export const blogs = [
       },
       {
         title: "5 Tips for Better Cardio Sessions",
-        url: "#",
+        url: "/blog/5-tips-for-better-cardio-sessions",
         articleImage: blogSecond,
         content:
           "Improve your cardio performance with these simple yet effective techniques to maximize stamina and get the most from each workout.",
@@ -139,7 +139,7 @@ export const blogs = [
       },
       {
         title: "Meal Prep Basics for Gym Enthusiasts",
-        url: "#",
+        url: "/blog/meal-prep-basics-for-gym-enthusiasts",
         articleImage: blogThird,
         content:
           "Fuel your workouts with balanced, easy-to-prepare meals. A guide on planning, prepping, and staying consistent with nutrition.",
@@ -147,7 +147,7 @@ export const blogs = [
       },
       {
         title: "Building Core Strength: Exercises and Benefits",
-        url: "#",
+        url: "/blog/building-core-strength-exercises-and-benefits",
         articleImage: blogForth,
         content:
           "A strong core is essential for stability and injury prevention. Learn the best exercises to enhance your core power.",
@@ -159,422 +159,774 @@ export const blogs = [
     id: 2,
     slug: "5-tips-for-better-cardio-sessions",
     title: "5 Tips for Better Cardio Sessions",
-    featuredImage: "/image/blog/gym.png",
+    featuredImage: Gym,
     blogCategory: "travel",
-    author: {
-      component: "author",
-    },
-    content: htmlString,
     components: {
-      constentSide: [
+      contentSide: [
         {
-          componentName: "authorDetailsSort",
-          authorImage: "",
+          componentName: "AuthorDetailsSort",
+          authorImage: Author,
           authorName: "Alex Carter",
           createdAt: "23 January 2025",
         },
         {
-          componentName: "blogContent",
+          componentName: "BlogContent",
           content: htmlString,
         },
         {
-          componentName: "authorDetails",
+          componentName: "AuthorDetails",
           authorName: "Alex Carter",
-          authorImage: "",
+          authorImage: Author,
           authorBio:
             "With over a decade of experience in the fitness industry, Alex specializes in strength training and functional fitness. Certified by NASM and known for his motivational style, Alex designs workout programs that are both challenging and achievable. His passion lies in helping clients build strength and confidence through personalized training routines. Outside the gym, Alex is an avid runner and enjoys outdoor adventures.",
         },
         {
-          componentName: "nextPrevBlogs",
-          prevBlogId: 1,
-          nextBlogId: 2,
+          componentName: "NextPrevBlogs",
+          nextBlogData: {
+            title: "5 Tips for Better Cardio Sessions",
+            url: "/blog/5-tips-for-better-cardio-sessions",
+          },
+          prevBlogData: {
+            title: "Meal Prep Basics for Gym Enthusiasts",
+            url: "/blog/meal-prep-basics-for-gym-enthusiasts",
+          },
         },
       ],
       exploreSide: [
         {
-          componentName: "categoryBlogs",
-          blogs: [1, 2, 3],
+          componentName: "ExploreBlogs",
+          blogs: [
+            {
+              title: "Two women in local stand are chatting during morning..",
+              category: "Culinary",
+              date: "13 Jun 2022",
+              url: "/blog/two-women-in-local-stand-are-chatting-during-morning",
+              articleImage: blogSixth,
+            },
+            {
+              title: "Enjoying the sunset on Padar island together",
+              category: "Travel",
+              date: "22 Jul 2022",
+              url: "/blog/enjoying-the-sunset-on-padar-island-together",
+              articleImage: blogSixth,
+            },
+            {
+              title:
+                "The lush green surroundings of the campgrounds create a..",
+              category: "Travel",
+              date: "22 Jul 2022",
+              url: "/blog/the-lush-green-surroundings-of-the-campgrounds-create-a",
+              articleImage: blogFifth,
+            },
+          ],
         },
         {
-          componentName: "spacer",
+          componentName: "Spacer",
           height: 100,
         },
         {
-          componentName: "tourGuides",
+          componentName: "TourGuides",
           guides: [
             {
               guideName: "Miranda Rachel",
               guideLocation: "Jombang, Jawa timur",
               starts: 4,
-              profileImage: "",
+              profileImage: userOne,
             },
             {
               guideName: "Danielle Marsh",
               guideLocation: "Wonosobo, Jawa ten..",
               starts: 4,
-              profileImage: "",
+              profileImage: userSecond,
             },
             {
               guideName: "Kang Haerin",
               guideLocation: "Bandung, Jawa barat",
               starts: 5,
-              profileImage: "",
+              profileImage: userThird,
             },
           ],
         },
       ],
     },
-    reletedBlogs: [1, 2, 3, 4],
+    relatedArticles: [
+      {
+        title: "The Ultimate Guide to Full-Body Workouts",
+        url: "/blog/the-ultimate-guide-to-full-body-workouts",
+        articleImage: Gym,
+        content:
+          "Discover exercises that target every muscle group, helping you build strength and endurance. Perfect for beginners and seasoned gym-goers alike.",
+        createdBy: "Alex Carter",
+      },
+      {
+        title: "5 Tips for Better Cardio Sessions",
+        url: "/blog/5-tips-for-better-cardio-sessions",
+        articleImage: blogSecond,
+        content:
+          "Improve your cardio performance with these simple yet effective techniques to maximize stamina and get the most from each workout.",
+        createdBy: "Maya Lee",
+      },
+      {
+        title: "Meal Prep Basics for Gym Enthusiasts",
+        url: "/blog/meal-prep-basics-for-gym-enthusiasts",
+        articleImage: blogThird,
+        content:
+          "Fuel your workouts with balanced, easy-to-prepare meals. A guide on planning, prepping, and staying consistent with nutrition.",
+        createdBy: "Jordan Smith",
+      },
+      {
+        title: "Building Core Strength: Exercises and Benefits",
+        url: "/blog/building-core-strength-exercises-and-benefits",
+        articleImage: blogForth,
+        content:
+          "A strong core is essential for stability and injury prevention. Learn the best exercises to enhance your core power.",
+        createdBy: "Emma Rodriguez",
+      },
+    ],
   },
   {
+    id: 3,
     slug: "meal-prep-basics-for-gym-enthusiasts",
     title: "Meal Prep Basics for Gym Enthusiasts",
-    featuredImage: "/image/blog/gym.png",
+    featuredImage: Gym,
     blogCategory: "travel",
-    author: {
-      component: "author",
-    },
-    content: htmlString,
     components: {
-      constentSide: [
+      contentSide: [
         {
-          componentName: "authorDetailsSort",
-          authorImage: "",
+          componentName: "AuthorDetailsSort",
+          authorImage: Author,
           authorName: "Alex Carter",
           createdAt: "23 January 2025",
         },
         {
-          componentName: "blogContent",
+          componentName: "BlogContent",
           content: htmlString,
         },
         {
-          componentName: "authorDetails",
+          componentName: "AuthorDetails",
           authorName: "Alex Carter",
-          authorImage: "",
+          authorImage: Author,
           authorBio:
             "With over a decade of experience in the fitness industry, Alex specializes in strength training and functional fitness. Certified by NASM and known for his motivational style, Alex designs workout programs that are both challenging and achievable. His passion lies in helping clients build strength and confidence through personalized training routines. Outside the gym, Alex is an avid runner and enjoys outdoor adventures.",
         },
         {
-          componentName: "nextPrevBlogs",
-          prevBlogId: 1,
-          nextBlogId: 2,
+          componentName: "NextPrevBlogs",
+          nextBlogData: {
+            title: "5 Tips for Better Cardio Sessions",
+            url: "/blog/5-tips-for-better-cardio-sessions",
+          },
+          prevBlogData: {
+            title: "Meal Prep Basics for Gym Enthusiasts",
+            url: "/blog/meal-prep-basics-for-gym-enthusiasts",
+          },
         },
       ],
       exploreSide: [
         {
-          componentName: "categoryBlogs",
-          blogs: [1, 2, 3],
+          componentName: "ExploreBlogs",
+          blogs: [
+            {
+              title: "Two women in local stand are chatting during morning..",
+              category: "Culinary",
+              date: "13 Jun 2022",
+              url: "/blog/two-women-in-local-stand-are-chatting-during-morning",
+              articleImage: blogSixth,
+            },
+            {
+              title: "Enjoying the sunset on Padar island together",
+              category: "Travel",
+              date: "22 Jul 2022",
+              url: "/blog/enjoying-the-sunset-on-padar-island-together",
+              articleImage: blogSixth,
+            },
+            {
+              title:
+                "The lush green surroundings of the campgrounds create a..",
+              category: "Travel",
+              date: "22 Jul 2022",
+              url: "/blog/the-lush-green-surroundings-of-the-campgrounds-create-a",
+              articleImage: blogFifth,
+            },
+          ],
         },
         {
-          componentName: "spacer",
+          componentName: "Spacer",
           height: 100,
         },
         {
-          componentName: "tourGuides",
+          componentName: "TourGuides",
           guides: [
             {
               guideName: "Miranda Rachel",
               guideLocation: "Jombang, Jawa timur",
               starts: 4,
-              profileImage: "",
+              profileImage: userOne,
             },
             {
               guideName: "Danielle Marsh",
               guideLocation: "Wonosobo, Jawa ten..",
               starts: 4,
-              profileImage: "",
+              profileImage: userSecond,
             },
             {
               guideName: "Kang Haerin",
               guideLocation: "Bandung, Jawa barat",
               starts: 5,
-              profileImage: "",
+              profileImage: userThird,
             },
           ],
         },
       ],
     },
-    reletedBlogs: [1, 2, 3, 4],
+    relatedArticles: [
+      {
+        title: "The Ultimate Guide to Full-Body Workouts",
+        url: "/blog/the-ultimate-guide-to-full-body-workouts",
+        articleImage: Gym,
+        content:
+          "Discover exercises that target every muscle group, helping you build strength and endurance. Perfect for beginners and seasoned gym-goers alike.",
+        createdBy: "Alex Carter",
+      },
+      {
+        title: "5 Tips for Better Cardio Sessions",
+        url: "/blog/5-tips-for-better-cardio-sessions",
+        articleImage: blogSecond,
+        content:
+          "Improve your cardio performance with these simple yet effective techniques to maximize stamina and get the most from each workout.",
+        createdBy: "Maya Lee",
+      },
+      {
+        title: "Meal Prep Basics for Gym Enthusiasts",
+        url: "/blog/meal-prep-basics-for-gym-enthusiasts",
+        articleImage: blogThird,
+        content:
+          "Fuel your workouts with balanced, easy-to-prepare meals. A guide on planning, prepping, and staying consistent with nutrition.",
+        createdBy: "Jordan Smith",
+      },
+      {
+        title: "Building Core Strength: Exercises and Benefits",
+        url: "/blog/building-core-strength-exercises-and-benefits",
+        articleImage: blogForth,
+        content:
+          "A strong core is essential for stability and injury prevention. Learn the best exercises to enhance your core power.",
+        createdBy: "Emma Rodriguez",
+      },
+    ],
   },
   {
+    id: 4,
     slug: "building-core-strength-exercises-and-benefits",
     title: "Building Core Strength: Exercises and Benefits",
-    featuredImage: "/image/blog/gym.png",
+    featuredImage: Gym,
     blogCategory: "travel",
-    author: {
-      component: "author",
-    },
-    content: htmlString,
     components: {
-      constentSide: [
+      contentSide: [
         {
-          componentName: "authorDetailsSort",
-          authorImage: "",
+          componentName: "AuthorDetailsSort",
+          authorImage: Author,
           authorName: "Alex Carter",
           createdAt: "23 January 2025",
         },
         {
-          componentName: "blogContent",
+          componentName: "BlogContent",
           content: htmlString,
         },
         {
-          componentName: "authorDetails",
+          componentName: "AuthorDetails",
           authorName: "Alex Carter",
-          authorImage: "",
+          authorImage: Author,
           authorBio:
             "With over a decade of experience in the fitness industry, Alex specializes in strength training and functional fitness. Certified by NASM and known for his motivational style, Alex designs workout programs that are both challenging and achievable. His passion lies in helping clients build strength and confidence through personalized training routines. Outside the gym, Alex is an avid runner and enjoys outdoor adventures.",
         },
         {
-          componentName: "nextPrevBlogs",
-          prevBlogId: 1,
-          nextBlogId: 2,
+          componentName: "NextPrevBlogs",
+          nextBlogData: {
+            title: "5 Tips for Better Cardio Sessions",
+            url: "/blog/5-tips-for-better-cardio-sessions",
+          },
+          prevBlogData: {
+            title: "Meal Prep Basics for Gym Enthusiasts",
+            url: "/blog/meal-prep-basics-for-gym-enthusiasts",
+          },
         },
       ],
       exploreSide: [
         {
-          componentName: "categoryBlogs",
-          blogs: [1, 2, 3],
+          componentName: "ExploreBlogs",
+          blogs: [
+            {
+              title: "Two women in local stand are chatting during morning..",
+              category: "Culinary",
+              date: "13 Jun 2022",
+              url: "/blog/two-women-in-local-stand-are-chatting-during-morning",
+              articleImage: blogSixth,
+            },
+            {
+              title: "Enjoying the sunset on Padar island together",
+              category: "Travel",
+              date: "22 Jul 2022",
+              url: "/blog/enjoying-the-sunset-on-padar-island-together",
+              articleImage: blogSixth,
+            },
+            {
+              title:
+                "The lush green surroundings of the campgrounds create a..",
+              category: "Travel",
+              date: "22 Jul 2022",
+              url: "/blog/the-lush-green-surroundings-of-the-campgrounds-create-a",
+              articleImage: blogFifth,
+            },
+          ],
         },
         {
-          componentName: "spacer",
+          componentName: "Spacer",
           height: 100,
         },
         {
-          componentName: "tourGuides",
+          componentName: "TourGuides",
           guides: [
             {
               guideName: "Miranda Rachel",
               guideLocation: "Jombang, Jawa timur",
               starts: 4,
-              profileImage: "",
+              profileImage: userOne,
             },
             {
               guideName: "Danielle Marsh",
               guideLocation: "Wonosobo, Jawa ten..",
               starts: 4,
-              profileImage: "",
+              profileImage: userSecond,
             },
             {
               guideName: "Kang Haerin",
               guideLocation: "Bandung, Jawa barat",
               starts: 5,
-              profileImage: "",
+              profileImage: userThird,
             },
           ],
         },
       ],
     },
-    reletedBlogs: [1, 2, 3, 4],
+    relatedArticles: [
+      {
+        title: "The Ultimate Guide to Full-Body Workouts",
+        url: "/blog/the-ultimate-guide-to-full-body-workouts",
+        articleImage: Gym,
+        content:
+          "Discover exercises that target every muscle group, helping you build strength and endurance. Perfect for beginners and seasoned gym-goers alike.",
+        createdBy: "Alex Carter",
+      },
+      {
+        title: "5 Tips for Better Cardio Sessions",
+        url: "/blog/5-tips-for-better-cardio-sessions",
+        articleImage: blogSecond,
+        content:
+          "Improve your cardio performance with these simple yet effective techniques to maximize stamina and get the most from each workout.",
+        createdBy: "Maya Lee",
+      },
+      {
+        title: "Meal Prep Basics for Gym Enthusiasts",
+        url: "/blog/meal-prep-basics-for-gym-enthusiasts",
+        articleImage: blogThird,
+        content:
+          "Fuel your workouts with balanced, easy-to-prepare meals. A guide on planning, prepping, and staying consistent with nutrition.",
+        createdBy: "Jordan Smith",
+      },
+      {
+        title: "Building Core Strength: Exercises and Benefits",
+        url: "/blog/building-core-strength-exercises-and-benefits",
+        articleImage: blogForth,
+        content:
+          "A strong core is essential for stability and injury prevention. Learn the best exercises to enhance your core power.",
+        createdBy: "Emma Rodriguez",
+      },
+    ],
   },
   {
+    id: 5,
     slug: "two-women-in-local-stand-are-chatting-during-morning",
     title: "Two women in local stand are chatting during morning",
-    featuredImage: "/image/blog/gym.png",
+    featuredImage: Gym,
     blogCategory: "travel",
-    author: {
-      component: "author",
-    },
-    content: htmlString,
     components: {
-      constentSide: [
+      contentSide: [
         {
-          componentName: "authorDetailsSort",
-          authorImage: "",
+          componentName: "AuthorDetailsSort",
+          authorImage: Author,
           authorName: "Alex Carter",
           createdAt: "23 January 2025",
         },
         {
-          componentName: "blogContent",
+          componentName: "BlogContent",
           content: htmlString,
         },
         {
-          componentName: "authorDetails",
+          componentName: "AuthorDetails",
           authorName: "Alex Carter",
-          authorImage: "",
+          authorImage: Author,
           authorBio:
             "With over a decade of experience in the fitness industry, Alex specializes in strength training and functional fitness. Certified by NASM and known for his motivational style, Alex designs workout programs that are both challenging and achievable. His passion lies in helping clients build strength and confidence through personalized training routines. Outside the gym, Alex is an avid runner and enjoys outdoor adventures.",
         },
         {
-          componentName: "nextPrevBlogs",
-          prevBlogId: 1,
-          nextBlogId: 2,
+          componentName: "NextPrevBlogs",
+          nextBlogData: {
+            title: "5 Tips for Better Cardio Sessions",
+            url: "/blog/5-tips-for-better-cardio-sessions",
+          },
+          prevBlogData: {
+            title: "Meal Prep Basics for Gym Enthusiasts",
+            url: "/blog/meal-prep-basics-for-gym-enthusiasts",
+          },
         },
       ],
       exploreSide: [
         {
-          componentName: "categoryBlogs",
-          blogs: [1, 2, 3],
+          componentName: "ExploreBlogs",
+          blogs: [
+            {
+              title: "Two women in local stand are chatting during morning..",
+              category: "Culinary",
+              date: "13 Jun 2022",
+              url: "/blog/two-women-in-local-stand-are-chatting-during-morning",
+              articleImage: blogSixth,
+            },
+            {
+              title: "Enjoying the sunset on Padar island together",
+              category: "Travel",
+              date: "22 Jul 2022",
+              url: "/blog/enjoying-the-sunset-on-padar-island-together",
+              articleImage: blogSixth,
+            },
+            {
+              title:
+                "The lush green surroundings of the campgrounds create a..",
+              category: "Travel",
+              date: "22 Jul 2022",
+              url: "/blog/the-lush-green-surroundings-of-the-campgrounds-create-a",
+              articleImage: blogFifth,
+            },
+          ],
         },
         {
-          componentName: "spacer",
+          componentName: "Spacer",
           height: 100,
         },
         {
-          componentName: "tourGuides",
+          componentName: "TourGuides",
           guides: [
             {
               guideName: "Miranda Rachel",
               guideLocation: "Jombang, Jawa timur",
               starts: 4,
-              profileImage: "",
+              profileImage: userOne,
             },
             {
               guideName: "Danielle Marsh",
               guideLocation: "Wonosobo, Jawa ten..",
               starts: 4,
-              profileImage: "",
+              profileImage: userSecond,
             },
             {
               guideName: "Kang Haerin",
               guideLocation: "Bandung, Jawa barat",
               starts: 5,
-              profileImage: "",
+              profileImage: userThird,
             },
           ],
         },
       ],
     },
-    reletedBlogs: [1, 2, 3, 4],
+    relatedArticles: [
+      {
+        title: "The Ultimate Guide to Full-Body Workouts",
+        url: "/blog/the-ultimate-guide-to-full-body-workouts",
+        articleImage: Gym,
+        content:
+          "Discover exercises that target every muscle group, helping you build strength and endurance. Perfect for beginners and seasoned gym-goers alike.",
+        createdBy: "Alex Carter",
+      },
+      {
+        title: "5 Tips for Better Cardio Sessions",
+        url: "/blog/5-tips-for-better-cardio-sessions",
+        articleImage: blogSecond,
+        content:
+          "Improve your cardio performance with these simple yet effective techniques to maximize stamina and get the most from each workout.",
+        createdBy: "Maya Lee",
+      },
+      {
+        title: "Meal Prep Basics for Gym Enthusiasts",
+        url: "/blog/meal-prep-basics-for-gym-enthusiasts",
+        articleImage: blogThird,
+        content:
+          "Fuel your workouts with balanced, easy-to-prepare meals. A guide on planning, prepping, and staying consistent with nutrition.",
+        createdBy: "Jordan Smith",
+      },
+      {
+        title: "Building Core Strength: Exercises and Benefits",
+        url: "/blog/building-core-strength-exercises-and-benefits",
+        articleImage: blogForth,
+        content:
+          "A strong core is essential for stability and injury prevention. Learn the best exercises to enhance your core power.",
+        createdBy: "Emma Rodriguez",
+      },
+    ],
   },
-
   {
+    id: 6,
     slug: "enjoying-the-sunset-on-padar-island-together",
     title: "Enjoying the sunset on Padar island together",
-    featuredImage: "/image/blog/gym.png",
+    featuredImage: Gym,
     blogCategory: "travel",
-    author: {
-      component: "author",
-    },
-    content: htmlString,
     components: {
-      constentSide: [
+      contentSide: [
         {
-          componentName: "authorDetailsSort",
-          authorImage: "",
+          componentName: "AuthorDetailsSort",
+          authorImage: Author,
           authorName: "Alex Carter",
           createdAt: "23 January 2025",
         },
         {
-          componentName: "blogContent",
+          componentName: "BlogContent",
           content: htmlString,
         },
         {
-          componentName: "authorDetails",
+          componentName: "AuthorDetails",
           authorName: "Alex Carter",
-          authorImage: "",
+          authorImage: Author,
           authorBio:
             "With over a decade of experience in the fitness industry, Alex specializes in strength training and functional fitness. Certified by NASM and known for his motivational style, Alex designs workout programs that are both challenging and achievable. His passion lies in helping clients build strength and confidence through personalized training routines. Outside the gym, Alex is an avid runner and enjoys outdoor adventures.",
         },
         {
-          componentName: "nextPrevBlogs",
-          prevBlogId: 1,
-          nextBlogId: 2,
+          componentName: "NextPrevBlogs",
+          nextBlogData: {
+            title: "5 Tips for Better Cardio Sessions",
+            url: "/blog/5-tips-for-better-cardio-sessions",
+          },
+          prevBlogData: {
+            title: "Meal Prep Basics for Gym Enthusiasts",
+            url: "/blog/meal-prep-basics-for-gym-enthusiasts",
+          },
         },
       ],
       exploreSide: [
         {
-          componentName: "categoryBlogs",
-          blogs: [1, 2, 3],
+          componentName: "ExploreBlogs",
+          blogs: [
+            {
+              title: "Two women in local stand are chatting during morning..",
+              category: "Culinary",
+              date: "13 Jun 2022",
+              url: "/blog/two-women-in-local-stand-are-chatting-during-morning",
+              articleImage: blogSixth,
+            },
+            {
+              title: "Enjoying the sunset on Padar island together",
+              category: "Travel",
+              date: "22 Jul 2022",
+              url: "/blog/enjoying-the-sunset-on-padar-island-together",
+              articleImage: blogSixth,
+            },
+            {
+              title:
+                "The lush green surroundings of the campgrounds create a..",
+              category: "Travel",
+              date: "22 Jul 2022",
+              url: "/blog/the-lush-green-surroundings-of-the-campgrounds-create-a",
+              articleImage: blogFifth,
+            },
+          ],
         },
         {
-          componentName: "spacer",
+          componentName: "Spacer",
           height: 100,
         },
         {
-          componentName: "tourGuides",
+          componentName: "TourGuides",
           guides: [
             {
               guideName: "Miranda Rachel",
               guideLocation: "Jombang, Jawa timur",
               starts: 4,
-              profileImage: "",
+              profileImage: userOne,
             },
             {
               guideName: "Danielle Marsh",
               guideLocation: "Wonosobo, Jawa ten..",
               starts: 4,
-              profileImage: "",
+              profileImage: userSecond,
             },
             {
               guideName: "Kang Haerin",
               guideLocation: "Bandung, Jawa barat",
               starts: 5,
-              profileImage: "",
+              profileImage: userThird,
             },
           ],
         },
       ],
     },
-    reletedBlogs: [1, 2, 3, 4],
+    relatedArticles: [
+      {
+        title: "The Ultimate Guide to Full-Body Workouts",
+        url: "/blog/the-ultimate-guide-to-full-body-workouts",
+        articleImage: Gym,
+        content:
+          "Discover exercises that target every muscle group, helping you build strength and endurance. Perfect for beginners and seasoned gym-goers alike.",
+        createdBy: "Alex Carter",
+      },
+      {
+        title: "5 Tips for Better Cardio Sessions",
+        url: "/blog/5-tips-for-better-cardio-sessions",
+        articleImage: blogSecond,
+        content:
+          "Improve your cardio performance with these simple yet effective techniques to maximize stamina and get the most from each workout.",
+        createdBy: "Maya Lee",
+      },
+      {
+        title: "Meal Prep Basics for Gym Enthusiasts",
+        url: "/blog/meal-prep-basics-for-gym-enthusiasts",
+        articleImage: blogThird,
+        content:
+          "Fuel your workouts with balanced, easy-to-prepare meals. A guide on planning, prepping, and staying consistent with nutrition.",
+        createdBy: "Jordan Smith",
+      },
+      {
+        title: "Building Core Strength: Exercises and Benefits",
+        url: "/blog/building-core-strength-exercises-and-benefits",
+        articleImage: blogForth,
+        content:
+          "A strong core is essential for stability and injury prevention. Learn the best exercises to enhance your core power.",
+        createdBy: "Emma Rodriguez",
+      },
+    ],
   },
   {
-    slug: "the-lush-green-surroundings-of-the-campgrounds-create",
+    id: 7,
+    slug: "the-lush-green-surroundings-of-the-campgrounds-create-a",
     title: "The lush green surroundings of the campgrounds create a..",
-    featuredImage: "/image/blog/gym.png",
+    featuredImage: Gym,
     blogCategory: "travel",
-    author: {
-      component: "author",
-    },
-    content: htmlString,
     components: {
-      constentSide: [
+      contentSide: [
         {
-          componentName: "authorDetailsSort",
-          authorImage: "",
+          componentName: "AuthorDetailsSort",
+          authorImage: Author,
           authorName: "Alex Carter",
           createdAt: "23 January 2025",
         },
         {
-          componentName: "blogContent",
+          componentName: "BlogContent",
           content: htmlString,
         },
         {
-          componentName: "authorDetails",
+          componentName: "AuthorDetails",
           authorName: "Alex Carter",
-          authorImage: "",
+          authorImage: Author,
           authorBio:
             "With over a decade of experience in the fitness industry, Alex specializes in strength training and functional fitness. Certified by NASM and known for his motivational style, Alex designs workout programs that are both challenging and achievable. His passion lies in helping clients build strength and confidence through personalized training routines. Outside the gym, Alex is an avid runner and enjoys outdoor adventures.",
         },
         {
-          componentName: "nextPrevBlogs",
-          prevBlogId: 1,
-          nextBlogId: 2,
+          componentName: "NextPrevBlogs",
+          nextBlogData: {
+            title: "5 Tips for Better Cardio Sessions",
+            url: "/blog/5-tips-for-better-cardio-sessions",
+          },
+          prevBlogData: {
+            title: "Meal Prep Basics for Gym Enthusiasts",
+            url: "/blog/meal-prep-basics-for-gym-enthusiasts",
+          },
         },
       ],
       exploreSide: [
         {
-          componentName: "categoryBlogs",
-          blogs: [1, 2, 3],
+          componentName: "ExploreBlogs",
+          blogs: [
+            {
+              title: "Two women in local stand are chatting during morning..",
+              category: "Culinary",
+              date: "13 Jun 2022",
+              url: "/blog/two-women-in-local-stand-are-chatting-during-morning",
+              articleImage: blogSixth,
+            },
+            {
+              title: "Enjoying the sunset on Padar island together",
+              category: "Travel",
+              date: "22 Jul 2022",
+              url: "/blog/enjoying-the-sunset-on-padar-island-together",
+              articleImage: blogSixth,
+            },
+            {
+              title:
+                "The lush green surroundings of the campgrounds create a..",
+              category: "Travel",
+              date: "22 Jul 2022",
+              url: "/blog/the-lush-green-surroundings-of-the-campgrounds-create-a",
+              articleImage: blogFifth,
+            },
+          ],
         },
         {
-          componentName: "spacer",
+          componentName: "Spacer",
           height: 100,
         },
         {
-          componentName: "tourGuides",
+          componentName: "TourGuides",
           guides: [
             {
               guideName: "Miranda Rachel",
               guideLocation: "Jombang, Jawa timur",
               starts: 4,
-              profileImage: "",
+              profileImage: userOne,
             },
             {
               guideName: "Danielle Marsh",
               guideLocation: "Wonosobo, Jawa ten..",
               starts: 4,
-              profileImage: "",
+              profileImage: userSecond,
             },
             {
               guideName: "Kang Haerin",
               guideLocation: "Bandung, Jawa barat",
               starts: 5,
-              profileImage: "",
+              profileImage: userThird,
             },
           ],
         },
       ],
     },
-    reletedBlogs: [1, 2, 3, 4],
+    relatedArticles: [
+      {
+        title: "The Ultimate Guide to Full-Body Workouts",
+        url: "/blog/the-ultimate-guide-to-full-body-workouts",
+        articleImage: Gym,
+        content:
+          "Discover exercises that target every muscle group, helping you build strength and endurance. Perfect for beginners and seasoned gym-goers alike.",
+        createdBy: "Alex Carter",
+      },
+      {
+        title: "5 Tips for Better Cardio Sessions",
+        url: "/blog/5-tips-for-better-cardio-sessions",
+        articleImage: blogSecond,
+        content:
+          "Improve your cardio performance with these simple yet effective techniques to maximize stamina and get the most from each workout.",
+        createdBy: "Maya Lee",
+      },
+      {
+        title: "Meal Prep Basics for Gym Enthusiasts",
+        url: "/blog/meal-prep-basics-for-gym-enthusiasts",
+        articleImage: blogThird,
+        content:
+          "Fuel your workouts with balanced, easy-to-prepare meals. A guide on planning, prepping, and staying consistent with nutrition.",
+        createdBy: "Jordan Smith",
+      },
+      {
+        title: "Building Core Strength: Exercises and Benefits",
+        url: "/blog/building-core-strength-exercises-and-benefits",
+        articleImage: blogForth,
+        content:
+          "A strong core is essential for stability and injury prevention. Learn the best exercises to enhance your core power.",
+        createdBy: "Emma Rodriguez",
+      },
+    ],
   },
 ];
